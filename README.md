@@ -1,6 +1,6 @@
 ## RUST
 
-The repository is for practicing programming in RUST language and learning it.
+The repository is for practicing programming in RUST language and learning it. The repository contains file in rust language
 
 ### Installation 
 
