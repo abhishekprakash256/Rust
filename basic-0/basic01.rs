@@ -1,6 +1,5 @@
-// this is the first program in rust 
+// this is the first program in rust
 
-fn main()
-{
-	println!("Hey world!")
+fn main() {
+    println!("Hey world!");
 }
