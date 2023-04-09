@@ -1,5 +1,15 @@
 // make the rust program for the variables
 
+fn dummy3()
+// function for making the dummy varibales
+{
+	 const SEC_IN_MIN : i32 = 60;
+	 println!("{}",SEC_IN_MIN);
+
+}
+
+
+
 fn dummy2()
 //shawoow varibale techniques
 {
@@ -33,6 +43,6 @@ fn main()
 	println!("x is : {}",x);
 	dummy();
 	dummy2();
-
+	dummy3();
 
 } 
