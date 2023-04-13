@@ -25,6 +25,8 @@ rustfmt <filename.rs>   #to format the rust files
 
 - Only one line comments are there in rust by "//"
 
+- The block comments are /* and */ 
+
 - Rust makes a binary file or executable 
 
 - Cargo is the rust default package manager 
@@ -40,10 +42,15 @@ rustfmt <filename.rs>   #to format the rust files
   - The variable scope can be change as per the scope of the braces 
   - Exterior scope can be used inside but not outside 
   - Const the value and the type of the variable doesn't change tin the whole program , use capital snake case for this type of the writing, you have to define the type and the value for it.
+  - The const are never assigned on run time, we can have 100_000 for the value that is acceptable.
 
   ```rust
   const TIME_IN_DAY
   ```
+
+- Statements define a value and the expression is getting the value 
+
+  - if else can be also used in the expression to assign the value 
 
 - Data types in rust 
 
@@ -102,10 +109,24 @@ rustfmt <filename.rs>   #to format the rust files
   - The return has to be written at the end of the function without a semicolon and the also return type has to be written
   - The return should work as expression 
   - The return statement can be used with semicolon 
+  - The functions can be used in the snake case naming convention
+
+- Loop 
+
+  - the basic loop is the loop that executes until the break statement is called 
+  - While loop is same as the other languages 
+  - The for loop uses the iter function for the controlling 
+  - and the range can be done by double quotes like 1..10, get number from 1 to 9.
 
 - Memory management heap and stack  
 
   - The values are stored in the stack and the heap 
   - program are optimized to used the stack and sometimes heap 
   - Depends on usage
-  - 
+  - The ownership rules 
+    - each variable has one owner only at a time 
+    - the owner goes out of space it will drop the value
+    - Scope is like the block of the code that is executed by parenthesis
+    - When we assign a value to equal to another value it moves the value rather than copy it
+    - For cloning the value use the .clone method to make an another copy of the same string
+    - 
