@@ -40,6 +40,12 @@ fn main()
 
 	};
 
+	struct Color(i32,i32,i32);
+
+	let rect = (30,10);
+
+	println!("The area of the rectangles is {}", area(rect));
+
 
 	
 	println!("the username is {}",User_1.username);
@@ -47,4 +53,9 @@ fn main()
 	println!("the username is {}", User_2.username);
 
 	println!("the username is {}", User_3.username);
+}
+
+fn area(dimensions: (u32,u32))->u32
+{
+	dimensions.0 * dimensions.1
 }
