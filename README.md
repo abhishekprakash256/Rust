@@ -13,6 +13,7 @@ cargo build   #to build the package from the cargo package manager, rrun the com
 cargo run    #to make the project and run the file as well
 cargo check   #to check the code is that has errors 
 rustfmt <filename.rs>   #to format the rust files
+cargo new --lib restaurent   #to make the new library crate, with cargo directory 
 ```
 
 ### Concepts
@@ -129,4 +130,53 @@ rustfmt <filename.rs>   #to format the rust files
     - Scope is like the block of the code that is executed by parenthesis
     - When we assign a value to equal to another value it moves the value rather than copy it
     - For cloning the value use the .clone method to make an another copy of the same string
-    - 
+    - Reference don't take owner ship of the string 
+    - Kind of same concept as pointers 
+    - Reference are immutable by default 
+    - we can change that by making the variable mutable and reference mutable too 
+
+- Structs 
+
+  - The structs are like any other programing language 
+  - tuple and structs both are used 
+  - The structs are type of the different data types and element accessed by . notation 
+  - Tuple structs can be used as well for passing the values in the function 
+  - we can reference to values as well from the structs 
+
+- Enums 
+
+  - An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it.
+  - enum can group the structs as well 
+  - all the variables can be grouped together to store in the struct 
+  - enum can be used to keep only one variant of the data-type as well 
+  - A value can either exists or can be null value for the enum 
+  - Some key word is used for store any value or none value 
+  - match takes to match the value in the structs 
+  - The match will bind to the enum 
+  
+- Module sysytem 
+
+  - src has the main files for the rust directory system 
+  - lib.rs is in the src directory that has the crate system that can create a library system  for the package
+  - A package at-least have one crate 
+  - If lib.rs is in the root directory rust will automatically create a library with that directory 
+  - mod are keywords used to specify the module in the rust system
+  - super keyword can be used to access the parent module 
+  - if a module is private we can use the pub keyword to make it available for the other functions to use 
+  - enum all the variants are public by default 
+  - we can use the "use" keyword to bring the module to the scope 
+  - we can also rename to make the conflict go away for the imports by using the as keyword
+  - we can also import multiple modules by importing in the dictionary format one_module:{module,module2}
+  - 
+
+
+
+
+**Links** 
+
+```text
+https://www.youtube.com/watch?v=VFIOSWy93H0&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8&index=4
+```
+
+
+
