@@ -153,7 +153,7 @@ cargo new --lib restaurent   #to make the new library crate, with cargo director
   - Some key word is used for store any value or none value 
   - match takes to match the value in the structs 
   - The match will bind to the enum 
-  
+
 - Module sysytem 
 
   - src has the main files for the rust directory system 
@@ -167,7 +167,24 @@ cargo new --lib restaurent   #to make the new library crate, with cargo director
   - we can use the "use" keyword to bring the module to the scope 
   - we can also rename to make the conflict go away for the imports by using the as keyword
   - we can also import multiple modules by importing in the dictionary format one_module:{module,module2}
-  - 
+  - use of the self and crate the self is used for relative path and crate is used for absolute path 
+
+- Collections in Rust
+
+  - vector are dynamic array in rust 
+  - vectors are similar to arrays but with additional capabilities such as automatic resizing when elements are added or removed.
+  - push method is used to append into the vector 
+  - we can also take the reference to the vector as well by &vector_name 
+  - we can use a for loop for iteration in vector
+  - enum can be stored in vectors as well but of the same type 
+  - the strings can be used for the storing the bytes 
+  - they are stored as utf-8 bytes 
+  - strings can be created in multiple ways 
+  - they are stored as UTF-8 
+  - indexing is not that easy we use bytes method to iterate through the string 
+  - graphenses in rust to map the values of the string , we also need to import 
+  - hashmap used aslo a crate import and methods can be imported 
+
 
 
 
